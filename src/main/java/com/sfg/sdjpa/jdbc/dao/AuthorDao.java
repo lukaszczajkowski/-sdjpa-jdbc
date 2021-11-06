@@ -9,4 +9,6 @@ public interface AuthorDao {
     Author getByName(String name);
 
     Author saveNewAuthor(Author author);
+
+    Author updateAuthor(Author author);
 }
