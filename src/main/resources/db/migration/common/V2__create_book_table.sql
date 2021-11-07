@@ -1,14 +1,7 @@
 create table book (
-                      id bigint not null,
+                      id bigint not null auto_increment primary key,
                       isbn varchar(255),
                       publisher varchar(255),
                       title varchar(255),
-                      author_id BIGINT,
-                      primary key (id)
+                      author_id BIGINT
 ) engine=InnoDB;
-
-create table hibernate_sequence (
-    next_val bigint
-) engine=InnoDB;
-
-insert into hibernate_sequence values ( 1 );
